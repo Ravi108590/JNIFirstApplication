@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample_text"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <EditText
+        android:id="@+id/numOne"
+        android:layout_width="130dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="Num1"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/numTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/numTwo"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="Num2"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toEndOf="@+id/numOne"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Addition"
+        app:layout_constraintBaseline_toBaselineOf="@+id/subBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/subBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBTRACTION"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numTwo"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <Button
+        android:id="@+id/sumOfarray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Array SUM"
+        app:layout_constraintBaseline_toBaselineOf="@+id/stringconcat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/stringconcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="String Concatinate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sumOfarray"
+        app:layout_constraintTop_toBottomOf="@+id/subBtn"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/randomNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random Num"
+        app:layout_constraintBaseline_toBaselineOf="@+id/basicType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/basicType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type Valid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toEndOf="@+id/randomNum"
+        app:layout_constraintTop_toBottomOf="@+id/stringconcat"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <Button
+        android:id="@+id/createStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Create"
+        app:layout_constraintBaseline_toBaselineOf="@+id/getStudentDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/getStudentDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/createStudent"
+        app:layout_constraintTop_toBottomOf="@+id/basicType"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <Button
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        app:layout_constraintBaseline_toBaselineOf="@+id/getBundle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/getBundle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Bundle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/result"
+        app:layout_constraintTop_toBottomOf="@+id/getStudentDetails"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <Button
+        android:id="@+id/sendStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND STUDENT"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sendStudentEnum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sendStudentEnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SendStud Enum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/sendStudent"
+        app:layout_constraintTop_toBottomOf="@+id/getBundle"
+        app:layout_constraintVertical_bias="0.271" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
